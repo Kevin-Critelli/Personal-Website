@@ -113,6 +113,104 @@
 				</div>
 			</div>
 			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<h3>Prime numbers</h3>
+							
+							<p>Implement a function to compute the nth prime number.</p>
+							
+							<p class = "collapse" id = "nthprime"><i>boolean isPrime(int num){<br>if(num < 2){<br>return false;<br>}<br>
+																	 for(int i = 2; i <= num / 2; i ++){<br>if( (num%i) == 0){<br>return false;
+																	 <br>}<br>}<br>return true;<br>}
+																	<br><br>int nthPrime(int n){<br>int i = 2;<br>int counter = 0;<br>
+																	 while(true){<br>if(isPrime(i)){<br>counter++;<br>if(counter == n){break;}<br>
+																	 }<br>i++;<br>}<br>return i;<br></i></p>
+							
+							<button type = "button" class = "btn btn-danger pull-left" data-toggle = "collapse" data-target = "#nthprime">Show code</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<h3>Palindromes</h3>
+							
+							<p>A palindrome is a word, phrase, or sequence of symbols that is read the same forward as it is backwards. For example,
+								'A Santa at Nasa', 'Anna', and 'Cigar? Toss it in a can. It is so tragic' are all palindromes.</p>
+								
+							<p>Implement a function that when given a string, determins if it is a palindrome or not.</p>
+							
+							<p class = "collapse" id = "palindrome"><i>boolean isPalindrome(String input){<br>int i = 0;<br>int j = input.length()-1;<br>
+																	   while(i < j){<br>if(input.charAt(i) != input.charAt(j)){<br>return false;<br>
+																	   }else{<br>i++;<br>j--;<br>}<br>}<br>return true;<br>}</i></p>
+							
+							<button type = "button" class = "btn btn-danger pull-left" data-toggle = "collapse" data-target = "#palindrome">Show code</button>	
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<h3>Numbers</h3>
+							
+							<p>Implement a function to reverse an integer, do not convert it to a string, use math operations.</p>
+							
+							<p class = "collapse" id = "reverseInt"><i>int reverseInt(int x){<br>int newNum = 0;<br>while((x/10) > 0){<br>newNum = newNum*10;<br>
+																	   newNum += x%10;<br>x = x/10;<br>}<br>newNum = newNum*10;<br>newNum += x;<br>
+																	   return newNum;<br>}<br></i></p>
+							
+							<button type = "button" class = "btn btn-danger pull-left" data-toggle = "collapse" data-target = "#reverseInt">Show Code</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<h3>Time</h3>
+							
+							<p>Implement a function which takes in an integer x representing some number of seconds and output a string representation
+							   of the time in hours, minutes, and seconds. For eample if x is 3600 than output is "1 Hour 0 Mins 0 Seconds".</p>
+							   
+							<p class = "collapse" id = "time"><i>String secondsToTime(int x){<br>String time = "";<br>int numHours = x / 3600;<br>
+																 int numMins = (x % 3600) / 60;<br>x = x % 60;<br>time = numHours + " hours " + numMins + " minutes " + x + " seconds";<br>
+																 return time;<br>}<br></i></p>
+							
+							<button class = "btn btn-danger pull-left" data-toggle = "collapse" data-target = "#time">Show Code</button>   
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<h3>Linked Lists</h3>
+							
+							<p>Implement a function to reverse a Linked List. Assume each node only has a data field and next field, the function
+							   takes in one parameter, a pointer to the head of the linked list to reverse and returns a pointer to the new list.</p>
+							   
+							<p class = "collapse" id = "reverseLinkedList"><i>Node reverseLinkedList(Node listHead){<br>Node new_list = null;<br>
+																			  while(listHead != null){<br>Node ptr = listHead;<br>listHead = listHead.next;<br>
+																		      ptr.next = new_list;<br>new_list = ptr;<br>}<br>return new_list;<br>}<br></i></p>
+							
+							<button class = "btn btn-danger pull-left" data-toggle = "collapse" data-target = "#reverseLinkedList">Show Code</button>   
+						</div>
+					</div>
+				</div>
+			</div>
 			
 		</div> <!--end container for questions-->
 		

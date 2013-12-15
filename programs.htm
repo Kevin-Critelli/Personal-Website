@@ -57,15 +57,66 @@
 			</div>
 		</div>
 		
-			<div class = "container">
-				<div class = "jumbotron text-center">
-					<h1>This page is still under construction!!</h1>
+		<div class = "container">
+			
+			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<div class = "page-header">
+								<h1>Functions..Methods..Scripts..</h1>
+							</div>
+							
+							<!--<img class = "featureImg" src="images/image1.jpg">--> <!--Insert Image here once appropriate one is found-->
+							
+							<p>Heres a few fun functions to implement in any programming language you like. These problems are meant for fun/practice
+							   for a person new to programming. I will slowly add more difficult problems as time progresses. Some of these problems
+							   are classic questions I was asked during my undergraduate degree and some I have found cruising the internet.</p>		   	
+						</div>
+					</div>
 				</div>
 			</div>
+			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<h3>Fibonacci</h3>
+							   
+							<p>Implement a function to compute the nth fibonacci number.</p>  
+							   
+							<p class = "collapse" id = "fib"><i>int nthFib(int n){<br>if(n == 1 || n == 2){<br>return 1;<br>}<br>return nthFib(n-2) + nthFib(n-1);</i></p>   											
+							   
+							<button type = "button" class = "btn btn-danger pull-left" data-toggle = "collapse" data-target = "#fib">Show Code</button>   
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "row">
+				<div class = "col-lg-9">
+					<div class = "panel panel-default">
+						<div class = "panel-body">
+							<h3>String Manipulation</h3>
+							   
+							<p>Implement a function to reverse a String both iteratively and recursively.</p>  
+							   
+							<p class = "collapse" id = "string"><i>Iteratively<br><br>String reverse(String input){<br>String newString = "";<br>
+																   for(int i = input.length()-1;i>=0;i--){<br>newString += input.charAt(i);<br>}<br>
+																   return newString;<br>}<br><br>Recursively<br><br>String reverseRec(String input){<br>
+																    if(input.length() == 1){<br>return input;<br>}<br>return reverseRec(input.substring(1)) + input.charAt(0);<br>}</i></p>   											
+							   
+							<button type = "button" class = "btn btn-danger pull-left" data-toggle = "collapse" data-target = "#string">Show Code</button>   
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div> <!--end container for questions-->
 		
-		
-		
-		
+			
 		<div class = "navbar navbar-inverse navbar-fixed-bottom">
 			<div class = "container">
 				<p class = "navbar-text pull-left">Site Built by Kevin Critelli</p>

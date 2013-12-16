@@ -13,3 +13,8 @@ body{
 #navbarConstruction{
 	margin-bottom: 115px;
 }
+
+#jumboConstruction{
+	border-style:solid;
+	border-color:#ff0000;
+}

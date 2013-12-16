@@ -6,7 +6,10 @@
 	padding-top: 0;
 }
 
-body { 
+body{ 
 	padding-bottom: 70px;
 }
 
+#navbarConstruction{
+	margin-bottom: 115px;
+}
